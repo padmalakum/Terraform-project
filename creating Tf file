@@ -1,0 +1,12 @@
+Creating first Tf file
+
+resource "local_file" "Devops" {
+      filename ="/home/ubuntu/terraform/file1.txt"
+      content = "My first file created thru Terraform"
+}
+
+By applying 
+ Terraform init, terraform validat,e terraform plan and teraform apply the file is created
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+ubuntu@ip-172-31-28-60:~/terraform$ ls
+file1.txt  local.tf  terraform.tfstate
