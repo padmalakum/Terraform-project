@@ -33,6 +33,12 @@ we can get public ip of our ec2 instance by writing output block in our tf file
 we can create multiple instances by adding count=4  argument
 and then we can get public ip's of all instances by adding aws_instance[*].public_ip
 
+create s3 bucket
+![image](https://user-images.githubusercontent.com/92623347/232197298-ae5ec679-7cf6-4652-89c5-fdfe9d7f1c72.png)
+
+![image](https://user-images.githubusercontent.com/92623347/232197374-712291fa-159c-4d46-9ec7-ce4621c19473.png)
+
+
 
 
 
