@@ -10,3 +10,25 @@ By applying
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ubuntu@ip-172-31-28-60:~/terraform$ ls
 file1.txt  local.tf  terraform.tfstate
+
+creating a random string 
+
+resource "random_string" "rand-str" {
+     length = 16
+     special = true
+     override_Special = "!#$%&()-_=+{}[]:?" 
+}
+output = "rand-str" {
+value = random_string.rand-str[*].result
+}
+
+
+random_string.rand-str: Creating...
+random_string.rand-str: Creation complete after 0s [id=%w6)VUL=OcDq(bF=]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+rand-str = [
+  "%w6)VUL=OcDq(bF=",
