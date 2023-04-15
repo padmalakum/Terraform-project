@@ -23,5 +23,17 @@ we can check our instance which is created in aws-console
 
 ![image](https://user-images.githubusercontent.com/92623347/232194425-65addca3-9752-4371-99f5-a98e9d299116.png)
 
+we can get public ip of our ec2 instance by writing output block in our tf file
+
+![image](https://user-images.githubusercontent.com/92623347/232195617-2884de06-8563-4b42-b379-441fb2b33102.png)
+
+
+![image](https://user-images.githubusercontent.com/92623347/232195584-34fb9f83-8a02-4a93-9610-11c0b4c50f29.png)
+
+we can create multiple instances by adding count=4  argument
+and then we can get public ip's of all instances by adding aws_instance[*].public_ip
+
+
+
 
 
